@@ -1,0 +1,24 @@
+Server
+"yes": istek eğer sunucu tarafından onaylandıysa gönderilir
+"no": istek eğer sunucu tarafından onaylanmadıysa gönderilir
+
+Planlamaci Login
+"P": kullanıcı adı şifre bilgisi sunucuya gönderilirken gönderilir
+"PO": kullanıcı programdan çıktığında sunucuya gönderilirken gönderilir
+
+Planlamaci Gui
+"PG": sunucudan makinelerin durumu istendiğinde gönderilir
+"PGE": sunucuya yeni emir gönderilirken gönderilir
+"PGS": sunucudan kuyruktaki emirleri göstermek için gönderilir
+"PGJ": sunucudan yapılmış işleri göstermek için gönderilir
+
+isMakinesiRegister
+"M": yeni makine sunucuya girildiğinde gönderilir
+"MO": sunucudaki makinelerden birisi çıktığında gönderilir
+"PGED": makine görevini tamamladığında sunucuya gönderir
+
+MESAJ FORMATLARI
+userSession format: username+password+status
+jobDone format: makineID+emirtür+emiruzunluk
+emir format: "PGE"+tur+uzunluk //PGS+tur+uzunluk
+machines format: "M"+name+id+status+speed+tur
